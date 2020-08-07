@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import Card from "../components/Card"
 // import { graphql, useStaticQuery } from "gatsby"
 //import Img from "gatsby-image"
-import test from "../images/property.svg"
+//import test from "../images/property.svg"
 
 const Index = () => {
   // const data = useStaticQuery(graphql`
@@ -24,7 +24,7 @@ const Index = () => {
       {/* <div style={{ backgroundColor: "white" }}>
         <HeadingText text="Secured Property Investment" />
       </div> */}
-      <div
+      {/* <div
         style={{ textAlign: "center", minHeight: "50vw", marginBottom: "20px" }}
       >
         <img
@@ -32,7 +32,7 @@ const Index = () => {
           src={test}
           alt="property"
         />
-      </div>
+      </div> */}
 
       {/* <div>
         <Img

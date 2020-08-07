@@ -3,22 +3,22 @@ import Layout from "../components/Layout"
 import HeadingText from "../components/HeadingText"
 import ContactForm from "../components/ContactForm"
 import { style } from "../styles/pagesStyle"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+//import { graphql, useStaticQuery } from "gatsby"
+//import Img from "gatsby-image"
 import SEO from "../components/SEO"
 
 const ContactUs = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "images/contact-us.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     file(relativePath: { eq: "images/contact-us.jpg" }) {
+  //       childImageSharp {
+  //         fluid {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
   return (
     <Layout>
       <SEO
@@ -29,13 +29,13 @@ const ContactUs = () => {
         <HeadingText text="Contact Us" />
       </div>
 
-      <div>
+      {/* <div>
         <Img
           style={{ margin: "40px auto 20px", width: "100%", maxWidth: "900px" }}
           fluid={data.file.childImageSharp.fluid}
           alt="contact"
         />
-      </div>
+      </div> */}
 
       <div style={style.main}>
         <section style={style.section}>
