@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import HeadingText from "../components/HeadingText"
 import ContactForm from "../components/ContactForm"
 import { style } from "../styles/pagesStyle"
 //import { graphql, useStaticQuery } from "gatsby"
 //import Img from "gatsby-image"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 
 const ContactUs = () => {
   // const data = useStaticQuery(graphql`

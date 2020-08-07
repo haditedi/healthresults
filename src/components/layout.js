@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import Header from "./Header"
+import Header from "./header"
 import Footer from "./Footer"
 import layoutStyles from "./Layout.module.css"
 //import favicon from "../images/favicon.png"
