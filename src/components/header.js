@@ -5,7 +5,7 @@ import headerStyles from "./Header.module.css"
 import Box from "@material-ui/core/Box"
 import Menu from "@material-ui/core/Menu"
 import MenuItem from "@material-ui/core/MenuItem"
-import logo from "../images/logo.png"
+//import logo from "../images/logo.png"
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -22,15 +22,17 @@ const Header = () => {
     <header className={headerStyles.header}>
       <div className={headerStyles.logo}>
         <Link to="/">
-          <img
+          <h4>Secured Investment</h4>
+          {/* <img
             style={{ width: "70px", margin: "5px 10px 0", padding: "0" }}
             src={logo}
             alt="logo"
-          />
+          /> */}
         </Link>
       </div>
 
       <Box
+        style={{ borderRadius: "5px" }}
         component="div"
         mr="1rem"
         display={{
@@ -68,15 +70,6 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/application"
-            >
-              Application
-            </Link>
-          </MenuItem>
-          <MenuItem onClick={handleClose}>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
               to="/how-it-works"
             >
               How It Works
@@ -91,13 +84,14 @@ const Header = () => {
               Examples
             </Link>
           </MenuItem>
+
           <MenuItem onClick={handleClose}>
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/contact"
             >
-              Contact Us
+              Contact
             </Link>
           </MenuItem>
         </Menu>
@@ -118,15 +112,6 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/application"
-            >
-              Application
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.navItem}
-              activeClassName={headerStyles.activeNavItem}
               to="/how-it-works"
             >
               How It Works
@@ -141,13 +126,14 @@ const Header = () => {
               Examples
             </Link>
           </li>
+
           <li>
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/contact"
             >
-              Contact Us
+              Contact
             </Link>
           </li>
         </ul>

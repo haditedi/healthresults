@@ -1,40 +1,51 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import HeadingText from "../components/HeadingText"
+// import HeadingText from "../components/HeadingText"
 import Card from "../components/Card"
-import SEO from "../components/SEO"
+// import { graphql, useStaticQuery } from "gatsby"
+//import Img from "gatsby-image"
+import test from "../images/property.svg"
 
-export default function Home() {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "images/Bridging-Loans.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+const Index = () => {
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     file(relativePath: { eq: "images/houseHero.jpg" }) {
+  //       childImageSharp {
+  //         fluid {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+
   return (
     <Layout>
-      <SEO
-        title="Loans and Development Finance | Phil Walker Bridging"
-        description="Fast Solutions for bridging loans and development finance in London and United Kingdom. With over 30 years of experience, we help with your loans by connecting you with a suitable lender and aim to get a decision in principle within 24 - 48 hours provided all fields in application are completed."
-      />
-
-      <HeadingText text="FAST SOLUTIONS FOR BRIDGING LOANS AND DEVELOPMENT FINANCE" />
-
-      <div>
-        <Img
-          style={{ margin: "0 auto 20px", width: "100%", maxWidth: "900px" }}
-          fluid={data.file.childImageSharp.fluid}
-          alt="bridging loan"
+      {/* <div style={{ backgroundColor: "white" }}>
+        <HeadingText text="Secured Property Investment" />
+      </div> */}
+      <div
+        style={{ textAlign: "center", minHeight: "50vw", marginBottom: "20px" }}
+      >
+        <img
+          style={{ width: "100%", maxWidth: "1500px" }}
+          src={test}
+          alt="property"
         />
       </div>
 
+      {/* <div>
+        <Img
+          style={{
+            margin: "30px auto 20px",
+            width: "100%",
+            maxWidth: "900px",
+            boxShadow: "0 0 2px 2px #7f8fa6",
+          }}
+          fluid={data.file.childImageSharp.fluid}
+          alt="property"
+        />
+      </div> */}
       <div
         style={{
           display: "flex",
@@ -45,35 +56,59 @@ export default function Home() {
       >
         <Card
           style={{
-            backgroundColor: "#7bed9f",
-            boxShadow: "0 0 2px 2px #2ed573",
+            backgroundColor: "#487eb0",
+            boxShadow: "0 0 2px 2px #192a56",
+            color: "white",
           }}
-          mainText="Welcome To Phil Walker Bridging, A One-Stop Shop For All Your Bridging And Finance Needs."
-          para="With over 30 years of experience in the market, and access to all the top lenders, we make the complicated, sometimes daunting task of securing finance, quick, easy and straightforward."
-        />
+          mainText="How to buy UK property 47% BMV and 3X your money over 10 years? Without ever lifting a finger"
+        >
+          <p className="paraPadd">
+            This may sound too good to be true, but in fact it is 100% genuine.
+            Read on to learn how the strategy works and why savvy investors are
+            moving in fast!
+          </p>
+          <p className="paraPadd">
+            It’s widely accepted that UK property investments are one of the
+            world’s best 'safe haven' asset classes
+          </p>
+          <p className="paraPadd">
+            However, with recent Section 24 tax changes, ever increasing
+            regulations on landlords, ever growing tenant rights and tighter
+            mortgage criteria it’s time to…
+          </p>
+        </Card>
         <Card
           style={{
-            backgroundColor: "#ff6b81",
-            boxShadow: "0 0 2px 2px #ff4757",
-            color: "#f1f2f6",
+            backgroundColor: "#718093",
+            boxShadow: "0 0 2px 2px #dcdde1",
+            color: "white",
           }}
-          mainText="Most developer´s applications fail because of a poorly presented file"
-          para="Unfortunately, most developers never receive any feedback and therefore
-        never know why the application failed. This leads to getting caught in a
-        cycle going round lots of different lenders, ultimately with no joy. We
-        remove all those obstacles. Not only does working with us mean that your
-        file will be presented properly, but it will be presented to the very
-        best lender suited to your situation. All of this, in a timely fashion."
-        />
-        <Card
-          style={{
-            backgroundColor: "#7bed9f",
-            boxShadow: "0 0 2px 2px #2ed573",
-          }}
-          mainText="We aim to get an answer to your completed application and a Decision in principle in 24-48 hours"
-          para="Provided you have answered all the questions in full as accurately and truthfully as you can based on the current information you have on your specific loan requirements. If for whatever reason we cannot meet your funding requirements we will let you know promptly and not put you to the inconvenience of waiting for weeks before telling you that your application has been turned down."
-        />
+          mainText="ReThink Property Investing!"
+        >
+          <p className="paraPadd">
+            Welcome to Long-Term-Tenant property investment strategy – the
+            ultimate alternate solution to the increasingly difficult,
+            expensive, and risky Buy-2-Let property market
+          </p>
+
+          <p className="paraPadd" style={{ marginTop: "20px" }}>
+            <b>Investment Headlines</b>
+          </p>
+
+          <ul style={{ padding: "0 10px" }}>
+            <li>10 year investment into existing UK residential property.</li>
+            <li>Average 47% BMV entry point.</li>
+            <li>3X return.</li>
+            <li>Minimum £50K. Maximum £10M.</li>
+            <li>Each £100K invested will return £300K.</li>
+            <li>
+              Clients can exit early but this may result in a lower return.
+            </li>
+          </ul>
+        </Card>
       </div>
     </Layout>
   )
 }
+
+export default Index
