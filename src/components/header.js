@@ -22,7 +22,7 @@ const Header = () => {
     <header className={headerStyles.header}>
       <div className={headerStyles.logo}>
         <Link to="/">
-          <h4>LOGO</h4>
+          <h4 style={{ color: "white" }}>LOGO</h4>
           {/* <img
             style={{ width: "70px", margin: "5px 10px 0", padding: "0" }}
             src={logo}
