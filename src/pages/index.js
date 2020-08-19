@@ -10,13 +10,6 @@ import { Link } from "gatsby"
 //import test from "../images/property.svg"
 
 const Index = () => {
-  const style = {
-    container: {
-      margin: "0 auto",
-      maxWidth: "1500px",
-      position: "relative",
-    },
-  }
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "herohealthrev.png" }) {
@@ -31,7 +24,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <div style={style.container}>
+      <div className={classes.container}>
         <section style={{ margin: "80px 0 0", padding: "0" }}>
           <Img
             style={{
@@ -44,15 +37,12 @@ const Index = () => {
             alt="woman doing yoga"
           />
         </section>
-        <section
-          style={{
-            position: "absolute",
-            top: "20px",
-            padding: "0 20px",
-            backgroundColor: "rgba(153, 153, 153, 0.5)",
-          }}
-        >
-          <h1 style={{ color: "white", textAlign: "center" }}>
+        <section className={classes.containerText}>
+          <h1
+            data-sal="zoom-in"
+            data-sal-easing="ease"
+            data-sal-duration="2000"
+          >
             When you look for a solution in health, business and our hectic
             time-pressed lives- what matters most?
           </h1>
@@ -60,12 +50,20 @@ const Index = () => {
       </div>
       <div>
         <section className={classes.content}>
-          <h3>
-            Results... FAST RESULTS ! Everyone wants them. "Solve my problem -
+          <h3
+            data-sal="slide-right"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
+            Results... FAST RESULTS! Everyone wants them. "Solve my problem -
             and do it Yesterday!"
           </h3>
-          <br />
-          <p>
+
+          <p
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
             Well.. we can't promise yesterday.. but as you'll see in the
             examples and testimonials here - FAST we can deliver. Many companies
             have products that offer weight loss, better sleep, more energy,
@@ -84,11 +82,19 @@ const Index = () => {
         </section>
 
         <section className={classes.guarantee}>
-          <h3>
+          <h3
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
             All the company products have a full 30 day money-back guarantee if
             you're completely happy with the results you get after taking them.
           </h3>
-          <p>
+          <p
+            data-sal="slide-right"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
             Check out the rest of the site for further details You may just wish
             to use the products for all their health benefits and have no
             interest in building a part-time/full-time business for yourself

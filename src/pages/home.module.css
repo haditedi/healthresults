@@ -1,7 +1,24 @@
+.container {
+  margin: 0 auto;
+  max-width: 1500px;
+  position: relative;
+}
+.containerText {
+  position: absolute;
+  top: 20px;
+  padding: 0 20px;
+  background-color: rgba(153, 153, 153, 0.5);
+}
+.containerText h1 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
 .content {
   margin: 20px auto;
   padding: 15px;
-  max-width: 750px;
+  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,14 +30,14 @@
 }
 
 .content p {
-  flex: 3;
+  flex: 2;
   padding: 15px;
 }
 
 .guarantee {
   margin: 20px auto;
   padding: 15px;
-  max-width: 750px;
+  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +59,12 @@
 }
 
 @media (max-width: 600px) {
+  .containerText h1 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+
   .content {
     flex-direction: column;
   }

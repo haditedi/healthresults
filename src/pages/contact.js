@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import HeadingText from "../components/HeadingText"
 import ContactForm from "../components/ContactForm"
 import { style } from "../styles/pagesStyle"
 //import { graphql, useStaticQuery } from "gatsby"
@@ -25,9 +24,7 @@ const ContactUs = () => {
         title="Contact Us | "
         description="Get in touch with us either by phone or the enquiry form."
       />
-      <div style={{ backgroundColor: "white" }}>
-        <HeadingText text="Contact Us" />
-      </div>
+      <div style={{ marginTop: "80px" }}>contact us</div>
 
       {/* <div>
         <Img
@@ -37,7 +34,7 @@ const ContactUs = () => {
         />
       </div> */}
 
-      <div style={style.main}>
+      {/* <div style={style.main}>
         <section style={style.section}>
           <h3>Our contact details are listed below.. </h3>
           <p style={style.para}>Health Results</p>
@@ -47,7 +44,7 @@ const ContactUs = () => {
         <section style={style.section}>
           <ContactForm />
         </section>
-      </div>
+      </div> */}
     </Layout>
   )
 }
