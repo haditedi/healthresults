@@ -2,110 +2,103 @@ import React from "react"
 import Layout from "../components/layout"
 // import HeadingText from "../components/HeadingText"
 import Card from "../components/Card"
-// import { graphql, useStaticQuery } from "gatsby"
-//import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+import { FormHelperText } from "@material-ui/core"
+import classes from "./home.module.css"
+import { Link } from "gatsby"
 //import test from "../images/property.svg"
 
 const Index = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     file(relativePath: { eq: "images/houseHero.jpg" }) {
-  //       childImageSharp {
-  //         fluid {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+  const style = {
+    container: {
+      margin: "0 auto",
+      maxWidth: "1500px",
+      position: "relative",
+    },
+  }
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "herohealthrev.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <Layout>
-      {/* <div style={{ backgroundColor: "white" }}>
-        <HeadingText text="Secured Property Investment" />
-      </div> */}
-      {/* <div
-        style={{ textAlign: "center", minHeight: "50vw", marginBottom: "20px" }}
-      >
-        <img
-          style={{ width: "100%", maxWidth: "1500px" }}
-          src={test}
-          alt="property"
-        />
-      </div> */}
-
-      {/* <div>
-        <Img
+      <div style={style.container}>
+        <section style={{ margin: "80px 0 0", padding: "0" }}>
+          <Img
+            style={{
+              margin: "0",
+              padding: "0",
+              height: "100%",
+              maxHeight: "800px",
+            }}
+            fluid={data.file.childImageSharp.fluid}
+            alt="woman doing yoga"
+          />
+        </section>
+        <section
           style={{
-            margin: "30px auto 20px",
-            width: "100%",
-            maxWidth: "900px",
-            boxShadow: "0 0 2px 2px #7f8fa6",
+            position: "absolute",
+            top: "20px",
+            padding: "0 20px",
+            backgroundColor: "rgba(153, 153, 153, 0.5)",
           }}
-          fluid={data.file.childImageSharp.fluid}
-          alt="property"
-        />
-      </div> */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
-        <Card
-          style={{
-            backgroundColor: "#487eb0",
-            boxShadow: "0 0 2px 2px #192a56",
-            color: "white",
-          }}
-          mainText="How to buy UK property 47% BMV and 3X your money over 10 years? Without ever lifting a finger"
         >
-          <p className="paraPadd">
-            This may sound too good to be true, but in fact it is 100% genuine.
-            Read on to learn how the strategy works and why savvy investors are
-            moving in fast!
+          <h1 style={{ color: "white", textAlign: "center" }}>
+            When you look for a solution in health, business and our hectic
+            time-pressed lives- what matters most?
+          </h1>
+        </section>
+      </div>
+      <div>
+        <section className={classes.content}>
+          <h3>
+            Results... FAST RESULTS ! Everyone wants them. "Solve my problem -
+            and do it Yesterday!"
+          </h3>
+          <br />
+          <p>
+            Well.. we can't promise yesterday.. but as you'll see in the
+            examples and testimonials here - FAST we can deliver. Many companies
+            have products that offer weight loss, better sleep, more energy,
+            improved skin condition, greater focus and concentration and lot's
+            more. And they do it with 100% safe natural remedies that have no
+            harmful side effects. Our company does as well... BUT what makes us
+            unique is the speed with which people are seeing positive results.
+            The testimonial below is an example of how quick a great result can
+            be achieved using the products. Check out the testimonials page for
+            lots more examples.
           </p>
-          <p className="paraPadd">
-            It’s widely accepted that UK property investments are one of the
-            world’s best 'safe haven' asset classes
-          </p>
-          <p className="paraPadd">
-            However, with recent Section 24 tax changes, ever increasing
-            regulations on landlords, ever growing tenant rights and tighter
-            mortgage criteria it’s time to…
-          </p>
-        </Card>
-        <Card
-          style={{
-            backgroundColor: "#718093",
-            boxShadow: "0 0 2px 2px #dcdde1",
-            color: "white",
-          }}
-          mainText="ReThink Property Investing!"
-        >
-          <p className="paraPadd">
-            Welcome to Long-Term-Tenant property investment strategy – the
-            ultimate alternate solution to the increasingly difficult,
-            expensive, and risky Buy-2-Let property market
-          </p>
+        </section>
 
-          <p className="paraPadd" style={{ marginTop: "20px" }}>
-            <b>Investment Headlines</b>
-          </p>
+        <section className={classes.video}>
+          <h3>Video</h3>
+        </section>
 
-          <ul style={{ padding: "0 10px" }}>
-            <li>10 year investment into existing UK residential property.</li>
-            <li>Average 47% BMV entry point.</li>
-            <li>3X return.</li>
-            <li>Minimum £50K. Maximum £10M.</li>
-            <li>Each £100K invested will return £300K.</li>
-            <li>
-              Clients can exit early but this may result in a lower return.
-            </li>
-          </ul>
-        </Card>
+        <section className={classes.guarantee}>
+          <h3>
+            All the company products have a full 30 day money-back guarantee if
+            you're completely happy with the results you get after taking them.
+          </h3>
+          <p>
+            Check out the rest of the site for further details You may just wish
+            to use the products for all their health benefits and have no
+            interest in building a part-time/full-time business for yourself
+            with the superb benefits they offer. That's not a problem..but if
+            you do want to check out what a great business opportunity this is.
+            <Link to="/opportunity"> Click here</Link> or on the "business
+            opportunity" link above for details. Thank you for looking in on our
+            site.
+          </p>
+        </section>
       </div>
     </Layout>
   )

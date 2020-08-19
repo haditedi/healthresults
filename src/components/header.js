@@ -22,7 +22,7 @@ const Header = () => {
     <header className={headerStyles.header}>
       <div className={headerStyles.logo}>
         <Link to="/">
-          <h4>Secured Investment</h4>
+          <h4>LOGO</h4>
           {/* <img
             style={{ width: "70px", margin: "5px 10px 0", padding: "0" }}
             src={logo}
@@ -70,18 +70,18 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/how-it-works"
+              to="/testimonials"
             >
-              How It Works
+              Testimonials
             </Link>
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/examples"
+              to="/opportunity"
             >
-              Examples
+              Business Opportunity
             </Link>
           </MenuItem>
 
@@ -91,7 +91,7 @@ const Header = () => {
               activeClassName={headerStyles.activeNavItem}
               to="/contact"
             >
-              Contact
+              Contact/Privacy
             </Link>
           </MenuItem>
         </Menu>
@@ -112,18 +112,18 @@ const Header = () => {
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/how-it-works"
+              to="/testimonials"
             >
-              How It Works
+              Testimonials
             </Link>
           </li>
           <li>
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/examples"
+              to="/opportunity"
             >
-              Examples
+              Business Opportunity
             </Link>
           </li>
 
@@ -133,7 +133,7 @@ const Header = () => {
               activeClassName={headerStyles.activeNavItem}
               to="/contact"
             >
-              Contact
+              Contact/Privacy
             </Link>
           </li>
         </ul>

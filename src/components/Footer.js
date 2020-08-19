@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <footer className={footerStyles.footer}>
-        <h5 style={{ fontSize: "1em" }}>Secured Property Investment</h5>
+        <h5 style={{ fontSize: "1em" }}>Health Results</h5>
       </footer>
     </div>
   )

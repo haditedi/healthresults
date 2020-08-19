@@ -8,7 +8,7 @@
   height: 80px;
   margin: 0;
   padding: 0;
-  background-color: #2f3640;
+  background-color: #136d7f;
   opacity: 1;
   z-index: 1;
 }
@@ -52,15 +52,12 @@
 @media (min-width: 960px) {
   .notshow {
     display: initial;
-    width: 500px;
+    width: 700px;
   }
   .nav-item {
     display: inline-block;
     position: relative;
     color: white;
-  }
-  .nav-item:hover {
-    color: whitesmoke;
   }
 
   .nav-item::after {
@@ -83,7 +80,7 @@
 
   .active-nav-item {
     background-color: inherit;
-    color: orangered;
+    color: black;
     padding: 0;
   }
 }

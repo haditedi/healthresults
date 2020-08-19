@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import Header from "./header"
 import Footer from "./Footer"
 import layoutStyles from "./Layout.module.css"
+import "../styles/global.css"
 //import favicon from "../images/favicon.png"
 
 const Layout = props => {
@@ -18,7 +19,7 @@ const Layout = props => {
       </Helmet>
       <Header />
       <div className={layoutStyles.content}>
-        <section style={{ marginTop: "80px" }}>{props.children}</section>
+        <section>{props.children}</section>
       </div>
       <Footer />
     </div>

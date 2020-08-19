@@ -40,7 +40,7 @@ const ContactUs = () => {
       <div style={style.main}>
         <section style={style.section}>
           <h3>Our contact details are listed below.. </h3>
-          <p style={style.para}>Secured Property Investment</p>
+          <p style={style.para}>Health Results</p>
           <p>address</p>
           <p>Tel.</p>
         </section>
