@@ -1,13 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
-// import HeadingText from "../components/HeadingText"
-import Card from "../components/Card"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import { FormHelperText } from "@material-ui/core"
 import classes from "./home.module.css"
 import { Link } from "gatsby"
-//import test from "../images/property.svg"
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -25,7 +21,7 @@ const Index = () => {
   return (
     <Layout>
       <div className={classes.container}>
-        <section style={{ margin: "80px 0 0", padding: "0" }}>
+        <section>
           <Img
             style={{
               margin: "0",

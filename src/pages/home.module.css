@@ -55,14 +55,14 @@
 
 .video {
   height: 300px;
-  background-color: khaki;
+  background-color: #c4e538;
 }
 
 @media (max-width: 600px) {
   .containerText h1 {
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
   }
 
   .content {

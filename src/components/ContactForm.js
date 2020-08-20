@@ -18,12 +18,12 @@ const inStyles = theme => ({
       borderColor: `${theme.palette.primary.main} !important`,
     },
   },
-
-  cssFocused: { color: "white" },
+  colorText: "white",
+  cssFocused: { color: "black" },
 
   notchedOutline: {
     borderWidth: "1px",
-    borderColor: "white !important",
+    borderColor: "black !important",
   },
 })
 
@@ -40,16 +40,15 @@ const ContactForm = props => {
 
       <TextField
         style={{ height: "70px" }}
-        required
         InputProps={{
           classes: {
             root: classes.cssOutlinedInput,
             focused: classes.cssFocused,
             notchedOutline: classes.notchedOutline,
           },
-          style: { color: "white" },
+          style: { color: "black" },
         }}
-        InputLabelProps={{ style: { color: "white" } }}
+        InputLabelProps={{ style: { color: "black" } }}
         id="outlined-required"
         label="Name"
         name="name"
@@ -63,14 +62,13 @@ const ContactForm = props => {
             focused: classes.cssFocused,
             notchedOutline: classes.notchedOutline,
           },
-          style: { color: "white" },
+          style: { color: "black" },
         }}
         id="outlined-number"
         label="Phone Number"
         name="number"
         variant="outlined"
-        InputLabelProps={{ style: { color: "white" } }}
-        required
+        InputLabelProps={{ style: { color: "black" } }}
       />
       <TextField
         style={{ height: "70px" }}
@@ -80,7 +78,7 @@ const ContactForm = props => {
             focused: classes.cssFocused,
             notchedOutline: classes.notchedOutline,
           },
-          style: { color: "white" },
+          style: { color: "black" },
         }}
         required
         id="email"
@@ -88,7 +86,7 @@ const ContactForm = props => {
         type="email"
         name="email"
         variant="outlined"
-        InputLabelProps={{ style: { color: "white" } }}
+        InputLabelProps={{ style: { color: "black" } }}
       />
       <TextField
         style={{ height: "70px" }}
@@ -98,7 +96,7 @@ const ContactForm = props => {
             focused: classes.cssFocused,
             notchedOutline: classes.notchedOutline,
           },
-          style: { color: "white" },
+          style: { color: "black" },
         }}
         id="message"
         label="Message"
@@ -106,7 +104,7 @@ const ContactForm = props => {
         multiline
         rows={4}
         variant="outlined"
-        InputLabelProps={{ style: { color: "white" } }}
+        InputLabelProps={{ style: { color: "black" } }}
       />
       <Button
         style={{ margin: "60px 0", backgroundColor: "#273c75" }}

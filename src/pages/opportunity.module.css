@@ -1,0 +1,33 @@
+.hero {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.content {
+  background-color: #c4e538;
+  margin: 50px auto 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content ol,
+.content p {
+  padding: 25px;
+  max-width: 700px;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    flex-wrap: wrap;
+  }
+  .content {
+    margin-top: 20px;
+  }
+}

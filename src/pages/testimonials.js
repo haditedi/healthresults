@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 const Testimonials = () => {
   return (
     <Layout>
-      <div style={{ marginTop: "80px" }}>testimonials</div>
+      <div>testimonials</div>
     </Layout>
   )
 }
