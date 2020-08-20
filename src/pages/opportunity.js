@@ -38,14 +38,22 @@ const Opportunity = () => {
       <div>
         <HeadingText text="Business Opportunity" />
         <div className={classes.hero}>
-          <section>
+          <section
+            data-sal="slide-right"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
             <Img
               style={{ width: "400px" }}
               fluid={data.file.child.fluid}
               alt="a group of people discussing"
             />
           </section>
-          <section>
+          <section
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
             <p style={{ padding: "25px" }}>
               We'll only go very briefly into the superb business opportunity
               with this company here as we can discuss it in depth if you decide
