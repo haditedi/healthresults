@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import classOp from "./opportunity.module.css"
 import classHome from "./home.module.css"
+import SEO from "../components/seo"
 
 const Testimonials = () => {
   const data = useStaticQuery(graphql`
@@ -28,6 +29,10 @@ const Testimonials = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Testimonials"
+        description="over 100 testimonials from people benefits from the products. Life changing improvements"
+      />
       <div>
         <HeadingText text="Testimonials" />
         <div className={classOp.hero}>
@@ -64,14 +69,27 @@ const Testimonials = () => {
         </div>
         <div className={classOp.content}>
           <iframe
+            data-sal="slide-right"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
             className={classHome.frame}
             src="https://www.youtube.com/embed/O66ti3npNIg"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-          <h2 style={{ padding: "40px 5px" }}>And more great results...</h2>
+          <h2
+            style={{ padding: "40px 5px" }}
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
+            And more great results...
+          </h2>
           <iframe
+            data-sal="slide-right"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
             className={classHome.frame}
             src="https://www.youtube.com/embed/9uqvNXFsuO0"
             frameBorder="0"
@@ -79,6 +97,9 @@ const Testimonials = () => {
             allowFullScreen
           ></iframe>
           <iframe
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
             style={{ marginTop: "40px" }}
             className={classHome.frame}
             src="https://www.youtube.com/embed/DxbgfaLEgUg"
@@ -87,7 +108,12 @@ const Testimonials = () => {
             allowFullScreen
           ></iframe>
 
-          <section className={classOp.display}>
+          <section
+            data-sal="slide-right"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+            className={classOp.display}
+          >
             <a
               href="https://www.facebook.com/frank.vandy.9/posts/10158668217686499?hc_location=ufi"
               target="_blank"
@@ -101,11 +127,19 @@ const Testimonials = () => {
             </a>
           </section>
 
-          <h2 style={{ padding: "40px 5px" }}>
+          <h2
+            style={{ padding: "40px 5px" }}
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
             And still more!!.. Great results just keep on coming!!
           </h2>
 
           <iframe
+            data-sal="slide-right"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
             className={classHome.frame}
             src="https://www.youtube.com/embed/ENlRBx3alBI"
             frameBorder="0"
@@ -120,6 +154,9 @@ const Testimonials = () => {
               textAlign: "center",
               width: "100%",
             }}
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
           >
             To see a fuller range of the many testimonials that keeping coming
             to us all the time check this{" "}

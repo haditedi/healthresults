@@ -9,7 +9,7 @@ const success = () => {
         <HeadingText text="Thank you for your enquiry" />
       </div>
       <div style={{ textAlign: "center" }}>
-        <p style={{ margin: "30px 15px", padding: "15px", color: "white" }}>
+        <p style={{ margin: "30px 15px", padding: "15px" }}>
           We have received your query and will get back to you as soon as
           possible.
         </p>

@@ -10,6 +10,7 @@ import AccordionSummary from "@material-ui/core/AccordionSummary"
 import AccordionDetails from "@material-ui/core/AccordionDetails"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import { makeStyles } from "@material-ui/core/styles"
+import SEO from "../components/seo"
 
 const useStyles = makeStyles({
   root: {
@@ -37,6 +38,13 @@ const Opportunity = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Business Opportunity"
+        description="Whether you want to have a
+              little extra part-time income or have a vision to grow a
+              substantial business this could be just the right time and vehicle
+              for you-as it has been for so many other people."
+      />
       <div>
         <HeadingText text="Business Opportunity" />
         <div className={classes.hero}>
@@ -70,6 +78,9 @@ const Opportunity = () => {
         </div>
         <div className={classes.content}>
           <iframe
+            data-sal="slide-right"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
             style={{ paddingBottom: "30px" }}
             className={classHome.frame}
             src="https://www.youtube.com/embed/qov86EO4qrE"

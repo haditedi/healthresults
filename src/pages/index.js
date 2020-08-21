@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import classes from "./home.module.css"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -20,6 +21,13 @@ const Index = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Great Health Products made from 100% safe natural remedies that have no harmful side effects. Comes with business opportunity."
+        description="what makes us
+            unique is the speed with which people are seeing positive results.
+            The testimonials are an example of how quick a great result can
+            be achieved using the products."
+      />
       <div className={classes.container}>
         <section>
           <Img
@@ -83,9 +91,7 @@ const Index = () => {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-          <h3 style={{ padding: "30px 5px 10px" }}>
-            More Amazing Results here...
-          </h3>
+          <h3 style={{ padding: "30px 5px" }}>More Amazing Results here...</h3>
           <iframe
             className={classes.frame}
             src="https://www.youtube.com/embed/wOnXeLwJr1k"

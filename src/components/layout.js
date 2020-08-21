@@ -4,14 +4,14 @@ import Header from "./header"
 import Footer from "./Footer"
 import layoutStyles from "./Layout.module.css"
 import "../styles/global.css"
-//import favicon from "../images/favicon.png"
+import favicon from "../images/healthFavicon.png"
 
 const Layout = props => {
   return (
     <div className={layoutStyles.container}>
       <Helmet>
         <html lang="en" />
-        {/* <link rel="icon" href={favicon} /> */}
+        <link rel="icon" href={favicon} />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
           rel="stylesheet"
