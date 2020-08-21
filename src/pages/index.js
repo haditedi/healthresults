@@ -74,7 +74,25 @@ const Index = () => {
         </section>
 
         <section className={classes.video}>
-          <h3>Video</h3>
+          <iframe
+            className={classes.frame}
+            // width="560"
+            // height="315"
+            src="https://www.youtube.com/embed/RQsAr430IJQ"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          <h3 style={{ padding: "30px 5px 10px" }}>
+            More Amazing Results here...
+          </h3>
+          <iframe
+            className={classes.frame}
+            src="https://www.youtube.com/embed/wOnXeLwJr1k"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </section>
 
         <section className={classes.guarantee}>

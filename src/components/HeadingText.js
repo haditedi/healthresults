@@ -5,8 +5,8 @@ const HeadingText = ({ text }) => {
     <div
       style={{
         textAlign: "center",
-        margin: "auto",
-        padding: "30px 40px",
+        margin: "0 auto",
+        padding: "30px 40px 20px",
         width: "100%",
 
         minHeight: "30px",

@@ -35,7 +35,7 @@
 }
 
 .guarantee {
-  margin: 20px auto;
+  margin: 10px auto 20px;
   padding: 15px;
   max-width: 900px;
   display: flex;
@@ -54,8 +54,17 @@
 }
 
 .video {
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 850px;
+  text-align: center;
   background-color: #c4e538;
+}
+.frame {
+  width: 560px;
+  height: 315px;
 }
 
 @media (max-width: 600px) {
@@ -71,6 +80,15 @@
   .content h3 {
     padding: 15px;
   }
+  .video {
+    height: 250px;
+    height: 500px;
+  }
+  .frame {
+    width: 250px;
+    height: 150px;
+  }
+
   .guarantee {
     flex-direction: column;
   }

@@ -4,6 +4,7 @@ import HeadingText from "../components/HeadingText"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import classes from "./opportunity.module.css"
+import classHome from "./home.module.css"
 import Accordion from "@material-ui/core/Accordion"
 import AccordionSummary from "@material-ui/core/AccordionSummary"
 import AccordionDetails from "@material-ui/core/AccordionDetails"
@@ -16,6 +17,7 @@ const useStyles = makeStyles({
     boxShadow: "0 0 2px 0 black",
     width: "100%",
     maxWidth: "700px",
+    marginTop: "20px",
   },
 })
 
@@ -67,6 +69,14 @@ const Opportunity = () => {
           </section>
         </div>
         <div className={classes.content}>
+          <iframe
+            style={{ paddingBottom: "30px" }}
+            className={classHome.frame}
+            src="https://www.youtube.com/embed/qov86EO4qrE"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
           <Accordion classes={{ root: myclass.root }}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
