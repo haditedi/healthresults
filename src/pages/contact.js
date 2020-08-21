@@ -22,7 +22,7 @@ const ContactUs = () => {
   return (
     <Layout>
       <SEO
-        title="Contact Us | "
+        title="Contact Us"
         description="Get in touch with us either by phone or the enquiry form."
       />
       <div>
