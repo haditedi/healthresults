@@ -4,7 +4,7 @@ import footerStyles from "./Footer.module.css"
 const Footer = () => {
   return (
     <div>
-      <p style={{ padding: "15px", textAlign: "center", maxWidth: "700px" }}>
+      <p style={{ padding: "15px", textAlign: "center" }}>
         To check out in full the company details check here{" "}
         <a
           href="https://www.bepic.com/answers"

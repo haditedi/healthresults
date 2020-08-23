@@ -35,9 +35,14 @@ const ContactForm = props => {
       name="contactFormProperty"
       action="/success"
       method="POST"
+      data-netlify="true"
     >
       <h3 style={{ marginBottom: "20px" }}>Enquiry Form</h3>
-
+      <input
+        type="hidden"
+        name="form-name"
+        value="contactFormHealthResult"
+      ></input>
       <TextField
         style={{ height: "70px" }}
         InputProps={{
