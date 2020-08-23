@@ -4,7 +4,6 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { Link } from "gatsby"
 
 const Privacy = () => {
-  console.log(style)
   return (
     <section style={{ ...style.paraHead, ...style.padd }}>
       <h3>PRIVACY NOTICE</h3>
