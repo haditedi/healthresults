@@ -32,7 +32,7 @@ const ContactForm = props => {
   return (
     <form
       style={style}
-      name="contactFormProperty"
+      name="contactFormHealthResult"
       action="/success"
       method="POST"
       data-netlify="true"
