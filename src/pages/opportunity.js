@@ -258,6 +258,28 @@ const Opportunity = () => {
             </AccordionDetails>
           </Accordion>
 
+          <h3 style={{ paddingTop: "40px" }}>To sum up ...</h3>
+          <ul style={{ padding: "0 35px " }}>
+            <li>A legitimate business.</li>
+            <li>
+              A portable business- one that ca be could run from anywhere.
+            </li>
+            <li>Automated- works 24/7.</li>
+            <li>
+              Allows you to control your schedule- work when and where you want.
+            </li>
+            <li>
+              More time to travel- not just 2 weeks to be squeezed in when
+              available Wake everyday when you want…not to an alarm clock.
+            </li>
+            <li>
+              No more commuting and being away from home for 2 weeks at a time.
+            </li>
+            <li>
+              Control over your income- no limit on what you can scale it to.
+            </li>
+          </ul>
+
           <p style={{ paddingLeft: "35px" }}>
             Thank you again for your interest and if you have any questions ,
             need any issue clarified further or just need some more information

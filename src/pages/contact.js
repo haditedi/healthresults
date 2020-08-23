@@ -6,6 +6,7 @@ import HeadingText from "../components/HeadingText"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
+import Privacy from "../components/Privacy"
 
 const ContactUs = () => {
   const data = useStaticQuery(graphql`
@@ -54,6 +55,8 @@ const ContactUs = () => {
         <section style={style.section}>
           <ContactForm />
         </section>
+
+        <Privacy />
       </div>
     </Layout>
   )

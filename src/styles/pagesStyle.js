@@ -7,4 +7,7 @@ export const style = {
   paraHead: { margin: "40px 0 15px" },
   red: { color: "red" },
   li: { marginTop: "10px" },
+  padd: { padding: "20px" },
+  pTop: { paddingTop: "15px" },
+  pBreak: { paddingTop: "35px" },
 }

@@ -17,6 +17,7 @@
   flex-direction: column;
 }
 .content ol,
+.content ul,
 .content p {
   padding: 25px;
   max-width: 700px;

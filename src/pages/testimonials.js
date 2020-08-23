@@ -53,21 +53,38 @@ const Testimonials = () => {
             data-sal-duration="1000"
           >
             <p style={{ padding: "25px" }}>
-              Below are just some of the 100's of testimonials on the benefits
-              of the products. There are loads more and you'll find many on the
-              various social media platforms. There is an official Facebook page
-              devoted solely to testimonials{" "}
-              <a
-                href="https://www.facebook.com/groups/740004836404298/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                - click here -
-              </a>
+              What struck us most about the many positive testimonials the
+              products have been getting is how many people never changed other
+              aspects of their behaviour but still got a great result. They
+              literally had their cake and ate it! Normally nature asks us to
+              meet her half-way and at least try to cut down on junk food, stop
+              smoking and drinking so much and take a little exercise.. with
+              these products some people didn't even do this but were pleased
+              with the outcome they got after taking them (not that we recommend
+              this as the ideal option.. with positive health changes the
+              results will be greatly enhanced).
             </p>
           </section>
         </div>
         <div className={classOp.content}>
+          <p
+            data-sal="slide-left"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+            style={{ padding: "0 25px 40px" }}
+          >
+            Below are just some of the 100's of testimonials on the benefits of
+            the products. There are loads more and you'll find many on the
+            various social media platforms. There is an official Facebook page
+            devoted solely to testimonials{" "}
+            <a
+              href="https://www.facebook.com/groups/740004836404298/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              - click here -
+            </a>
+          </p>
           <iframe
             data-sal="slide-right"
             data-sal-easing="ease"
