@@ -108,7 +108,7 @@ const Index = () => {
             data-sal-duration="1000"
           >
             All the company products have a full 30 day money-back guarantee if
-            you're completely happy with the results you get after taking them.
+            you're not happy with the results you get after taking them.
           </h3>
           <p
             data-sal="slide-right"

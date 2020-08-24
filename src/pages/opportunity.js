@@ -72,7 +72,11 @@ const Opportunity = () => {
               SEE." Well-- they're seeing them! Whether you want to have a
               little extra part-time income or have a vision to grow a
               substantial business this could be just the right time and vehicle
-              for you-as it has been for so many other people.
+              for you-as it has been for so many other people. If you like
+              selling - you'll love this ..BUT.. if you HATE selling you'll
+              really love this! Our team have created a complete system that
+              will do this on your behalf. We "LUDIFY" the selling problem-- "
+              Let. Us. Do .It For. You. " -Contact us for full details.
             </p>
           </section>
         </div>
