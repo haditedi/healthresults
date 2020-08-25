@@ -5,12 +5,70 @@ import Img from "gatsby-image"
 import classes from "./home.module.css"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import Slider from "react-slick"
 
 const Index = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    autoplay: true,
+    className: classes.carousel,
+    centerMode: true,
+    adaptiveHeight: true,
+  }
+
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "herohealthrev.png" }) {
-        childImageSharp {
+      april: file(relativePath: { eq: "carousel/april.jpg" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      body: file(relativePath: { eq: "carousel/body.jpg" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      face: file(relativePath: { eq: "carousel/face.png" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      marisol: file(relativePath: { eq: "carousel/marisol.jpg" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      hand: file(relativePath: { eq: "carousel/handbeforeafter.jpg" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      tracy: file(relativePath: { eq: "carousel/tracy.jpg" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      man: file(relativePath: { eq: "carousel/manbeforeafter.jpg" }) {
+        child: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
@@ -29,18 +87,6 @@ const Index = () => {
             be achieved using the products."
       />
       <div className={classes.container}>
-        <section>
-          <Img
-            style={{
-              margin: "0",
-              padding: "0",
-              height: "100%",
-              maxHeight: "800px",
-            }}
-            fluid={data.file.childImageSharp.fluid}
-            alt="woman doing yoga"
-          />
-        </section>
         <section className={classes.containerText}>
           <h1
             data-sal="zoom-in"
@@ -52,6 +98,56 @@ const Index = () => {
           </h1>
         </section>
       </div>
+
+      <Slider {...settings}>
+        <div>
+          <Img fluid={data.april.child.fluid} alt="April result" />
+        </div>
+
+        <div>
+          <Img
+            fluid={data.body.child.fluid}
+            alt="woman showing body before and after"
+          />
+        </div>
+        <div>
+          <Img
+            fluid={data.face.child.fluid}
+            alt="woman showing face before and after"
+          />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Img
+            fluid={data.marisol.child.fluid}
+            alt="woman showing stomach before and after"
+          />
+        </div>
+        <div>
+          <Img
+            fluid={data.hand.child.fluid}
+            alt="hand showing before and after"
+          />
+        </div>
+        <div>
+          <Img
+            fluid={data.tracy.child.fluid}
+            alt="Tracy's face showing before and after"
+          />
+        </div>
+        <div>
+          <Img
+            fluid={data.man.child.fluid}
+            alt="man body showing before and after"
+          />
+        </div>
+      </Slider>
+
       <div>
         <section className={classes.content}>
           <h3
@@ -84,8 +180,6 @@ const Index = () => {
         <section className={classes.video}>
           <iframe
             className={classes.frame}
-            // width="560"
-            // height="315"
             src="https://www.youtube.com/embed/RQsAr430IJQ"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

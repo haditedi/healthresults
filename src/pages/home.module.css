@@ -1,10 +1,8 @@
 .container {
-  margin: 0 auto;
+  margin: 0 auto 40px;
   max-width: 1500px;
-  position: relative;
 }
 .containerText {
-  position: absolute;
   top: 20px;
   padding: 0 20px;
   background-color: rgba(153, 153, 153, 0.5);
@@ -16,7 +14,7 @@
 }
 
 .content {
-  margin: 20px auto;
+  margin: 40px auto 20px;
   padding: 15px;
   max-width: 900px;
   display: flex;
@@ -32,6 +30,11 @@
 .content p {
   flex: 2;
   padding: 15px;
+}
+
+.carousel {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .guarantee {
