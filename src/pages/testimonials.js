@@ -163,7 +163,6 @@ const Testimonials = () => {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-
           <p
             style={{
               margin: "10px",
@@ -172,6 +171,26 @@ const Testimonials = () => {
               width: "100%",
             }}
             data-sal="slide-left"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
+            Here is a testimonial from{" "}
+            <a
+              href="https://www.facebook.com/VictoriaLFerguson/videos/10222981544345059"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Vicki Ferguson on Facebook
+            </a>
+          </p>
+
+          <p
+            style={{
+              padding: "10px 5px",
+              textAlign: "center",
+              width: "100%",
+            }}
+            data-sal="slide-right"
             data-sal-easing="ease"
             data-sal-duration="1000"
           >

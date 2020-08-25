@@ -11,16 +11,14 @@ import Slider from "react-slick"
 
 const Index = () => {
   var settings = {
-    dots: true,
     infinite: true,
-    speed: 500,
+    speed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
     autoplay: true,
     className: classes.carousel,
     centerMode: true,
-    adaptiveHeight: true,
   }
 
   const data = useStaticQuery(graphql`
@@ -32,14 +30,14 @@ const Index = () => {
           }
         }
       }
-      body: file(relativePath: { eq: "carousel/body.jpg" }) {
+      sarah: file(relativePath: { eq: "carousel/body.jpg" }) {
         child: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      face: file(relativePath: { eq: "carousel/face.png" }) {
+      nancy: file(relativePath: { eq: "carousel/face.png" }) {
         child: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -53,7 +51,7 @@ const Index = () => {
           }
         }
       }
-      hand: file(relativePath: { eq: "carousel/handbeforeafter.jpg" }) {
+      morgan: file(relativePath: { eq: "carousel/handbeforeafter.jpg" }) {
         child: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -67,7 +65,35 @@ const Index = () => {
           }
         }
       }
-      man: file(relativePath: { eq: "carousel/manbeforeafter.jpg" }) {
+      john: file(relativePath: { eq: "carousel/manbeforeafter.jpg" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      lindsey: file(relativePath: { eq: "carousel/lindsey.jpg" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      melody: file(relativePath: { eq: "carousel/melody.jpg" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      ric: file(relativePath: { eq: "carousel/ric.jpg" }) {
+        child: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      sandy: file(relativePath: { eq: "carousel/sandy.jpg" }) {
         child: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -101,50 +127,47 @@ const Index = () => {
 
       <Slider {...settings}>
         <div>
-          <Img fluid={data.april.child.fluid} alt="April result" />
+          <Img fluid={data.lindsey.child.fluid} alt="Lindsey's result" />
         </div>
 
         <div>
-          <Img
-            fluid={data.body.child.fluid}
-            alt="woman showing body before and after"
-          />
+          <Img fluid={data.sandy.child.fluid} alt="Sandy's result" />
+        </div>
+
+        <div>
+          <Img fluid={data.melody.child.fluid} alt="Melody's result" />
+        </div>
+
+        <div>
+          <Img fluid={data.ric.child.fluid} alt="Ric's result" />
+        </div>
+
+        <div>
+          '
+          <Img fluid={data.april.child.fluid} alt="April's result" />
+        </div>
+
+        <div>
+          <Img fluid={data.tracy.child.fluid} alt="Tracy's result" />
+        </div>
+
+        <div>
+          <Img fluid={data.john.child.fluid} alt="John's result" />
+        </div>
+
+        <div>
+          <Img fluid={data.morgan.child.fluid} alt="Morgan's result" />
+        </div>
+
+        <div>
+          <Img fluid={data.nancy.child.fluid} alt="Nancy's result" />
+        </div>
+
+        <div>
+          <Img fluid={data.sarah.child.fluid} alt="Sarah's result" />
         </div>
         <div>
-          <Img
-            fluid={data.face.child.fluid}
-            alt="woman showing face before and after"
-          />
-        </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Img
-            fluid={data.marisol.child.fluid}
-            alt="woman showing stomach before and after"
-          />
-        </div>
-        <div>
-          <Img
-            fluid={data.hand.child.fluid}
-            alt="hand showing before and after"
-          />
-        </div>
-        <div>
-          <Img
-            fluid={data.tracy.child.fluid}
-            alt="Tracy's face showing before and after"
-          />
-        </div>
-        <div>
-          <Img
-            fluid={data.man.child.fluid}
-            alt="man body showing before and after"
-          />
+          <Img fluid={data.marisol.child.fluid} alt="Marisol's result" />
         </div>
       </Slider>
 
