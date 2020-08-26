@@ -132,7 +132,7 @@ const Index = () => {
       </div>
 
       <div className={classes.carousel}>
-        <h3 style={{ textAlign: "center" }}>
+        <h3 style={{ textAlign: "center", padding: "0 15px 20px" }}>
           Just a tiny number of the many many superb results users of the
           products are getting !
         </h3>
