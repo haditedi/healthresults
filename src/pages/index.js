@@ -10,15 +10,21 @@ import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 
 const Index = () => {
+  // arrow color style in global.css
   var settings = {
     infinite: true,
-    speed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    fade: true,
-    autoplay: true,
+    speed: 500,
     className: classes.carousel,
-    centerMode: true,
+  }
+  var settingsMobile = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    className: classes.carousel,
   }
 
   const data = useStaticQuery(graphql`
@@ -37,7 +43,7 @@ const Index = () => {
           }
         }
       }
-      nancy: file(relativePath: { eq: "carousel/face.png" }) {
+      nancy: file(relativePath: { eq: "carousel/face.jpg" }) {
         child: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -125,51 +131,139 @@ const Index = () => {
         </section>
       </div>
 
-      <Slider {...settings}>
-        <div>
-          <Img fluid={data.lindsey.child.fluid} alt="Lindsey's result" />
-        </div>
+      <div className={classes.desktop}>
+        <Slider {...settings}>
+          <div>
+            <Img
+              style={{ marginTop: "150px" }}
+              fluid={data.lindsey.child.fluid}
+              alt="Lindsey's result"
+            />
+          </div>
 
-        <div>
-          <Img fluid={data.sandy.child.fluid} alt="Sandy's result" />
-        </div>
+          <div>
+            <Img
+              style={{ marginTop: "50px" }}
+              fluid={data.sandy.child.fluid}
+              alt="Sandy's result"
+            />
+          </div>
 
-        <div>
-          <Img fluid={data.melody.child.fluid} alt="Melody's result" />
-        </div>
+          <div>
+            <Img
+              style={{ marginTop: "50px" }}
+              fluid={data.melody.child.fluid}
+              alt="Melody's result"
+            />
+          </div>
 
-        <div>
-          <Img fluid={data.ric.child.fluid} alt="Ric's result" />
-        </div>
+          <div>
+            <Img
+              style={{ marginTop: "50px" }}
+              fluid={data.ric.child.fluid}
+              alt="Ric's result"
+            />
+          </div>
 
-        <div>
-          '
-          <Img fluid={data.april.child.fluid} alt="April's result" />
-        </div>
+          <div>
+            <Img fluid={data.april.child.fluid} alt="April's result" />
+          </div>
 
-        <div>
-          <Img fluid={data.tracy.child.fluid} alt="Tracy's result" />
-        </div>
+          <div>
+            <Img fluid={data.tracy.child.fluid} alt="Tracy's result" />
+          </div>
 
-        <div>
-          <Img fluid={data.john.child.fluid} alt="John's result" />
-        </div>
+          <div>
+            <Img
+              style={{ marginTop: "50px" }}
+              fluid={data.john.child.fluid}
+              alt="John's result"
+            />
+          </div>
 
-        <div>
-          <Img fluid={data.morgan.child.fluid} alt="Morgan's result" />
-        </div>
+          <div>
+            <Img
+              style={{ marginTop: "50px" }}
+              fluid={data.morgan.child.fluid}
+              alt="Morgan's result"
+            />
+          </div>
 
-        <div>
-          <Img fluid={data.nancy.child.fluid} alt="Nancy's result" />
-        </div>
+          <div>
+            <Img fluid={data.nancy.child.fluid} alt="Nancy's result" />
+          </div>
 
-        <div>
-          <Img fluid={data.sarah.child.fluid} alt="Sarah's result" />
-        </div>
-        <div>
-          <Img fluid={data.marisol.child.fluid} alt="Marisol's result" />
-        </div>
-      </Slider>
+          <div>
+            <Img fluid={data.sarah.child.fluid} alt="Sarah's result" />
+          </div>
+          <div>
+            <Img
+              style={{ marginTop: "100px" }}
+              fluid={data.marisol.child.fluid}
+              alt="Marisol's result"
+            />
+          </div>
+        </Slider>
+      </div>
+
+      <div className={classes.mobile}>
+        <Slider {...settingsMobile}>
+          <div>
+            <Img
+              style={{ marginTop: "65px" }}
+              fluid={data.lindsey.child.fluid}
+              alt="Lindsey's result"
+            />
+          </div>
+
+          <div>
+            <Img
+              style={{ marginTop: "20px" }}
+              fluid={data.sandy.child.fluid}
+              alt="Sandy's result"
+            />
+          </div>
+
+          <div>
+            <Img fluid={data.april.child.fluid} alt="April's result" />
+          </div>
+
+          <div>
+            <Img fluid={data.tracy.child.fluid} alt="Tracy's result" />
+          </div>
+
+          <div>
+            <Img
+              style={{ marginTop: "20px" }}
+              fluid={data.john.child.fluid}
+              alt="John's result"
+            />
+          </div>
+
+          <div>
+            <Img
+              style={{ marginTop: "30px" }}
+              fluid={data.morgan.child.fluid}
+              alt="Morgan's result"
+            />
+          </div>
+
+          <div>
+            <Img fluid={data.nancy.child.fluid} alt="Nancy's result" />
+          </div>
+
+          <div>
+            <Img fluid={data.sarah.child.fluid} alt="Sarah's result" />
+          </div>
+          <div>
+            <Img
+              style={{ marginTop: "30px" }}
+              fluid={data.marisol.child.fluid}
+              alt="Marisol's result"
+            />
+          </div>
+        </Slider>
+      </div>
 
       <div>
         <section className={classes.content}>

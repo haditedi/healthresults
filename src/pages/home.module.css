@@ -70,6 +70,12 @@
   width: 560px;
   height: 315px;
 }
+.desktop {
+  display: initial;
+}
+.mobile {
+  display: none;
+}
 
 @media (max-width: 600px) {
   .containerText h1 {
@@ -98,5 +104,11 @@
   }
   .guarantee h3 {
     padding: 15px;
+  }
+  .mobile {
+    display: initial;
+  }
+  .desktop {
+    display: none;
   }
 }

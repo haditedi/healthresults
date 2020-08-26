@@ -41,6 +41,10 @@ a {
   text-decoration: none;
 }
 
+.slick-next:before,
+.slick-prev:before {
+  color: black !important;
+}
 @media (min-width: 600px) {
   h1 {
     font-size: 2.5em;
