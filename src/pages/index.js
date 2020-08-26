@@ -131,6 +131,13 @@ const Index = () => {
         </section>
       </div>
 
+      <div className={classes.carousel}>
+        <h3 style={{ textAlign: "center" }}>
+          Just a tiny number of the many many superb results users of the
+          products are getting !
+        </h3>
+      </div>
+
       <div className={classes.desktop}>
         <Slider {...settings}>
           <div>
