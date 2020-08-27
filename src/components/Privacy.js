@@ -13,7 +13,7 @@ const Privacy = () => {
         “us”, or “our”). We are committed to protecting your personal
         information and your right to privacy. If you have any questions or
         concerns about our policy, or our practices with regards to your
-        personal information, please contact us at.
+        personal information, please contact us at 02037468731.
       </p>
       <p style={style.pTop}>
         When you visit our website , and use our services, you trust us with
@@ -347,7 +347,7 @@ const Privacy = () => {
       </AnchorLink>
       <p style={style.pTop}>
         If you have questions or comments about this policy, you may email us at
-        or by post to:
+        hazelhealth@hotmail.co.uk
       </p>
       <h3 id="twelve" style={style.pBreak}>
         12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
