@@ -126,7 +126,7 @@ const Index = () => {
             data-sal-duration="2000"
           >
             When you look for a solution in health, business and our hectic
-            time-pressed lives- what matters most?
+            time-pressed lives- what matters most? RESULT!
           </h1>
         </section>
       </div>
